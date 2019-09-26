@@ -1,4 +1,4 @@
-v dljvn efljvb dfljv dlj ljv efjlvdepipeline {
+pipeline {
     agent any
 
     stages {

@@ -2,13 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage ('Build Environment stage') {
-
-            steps {
-                sh 'yum install maven'
-                }
-            }
-         
         stage ('Compile Stage') {
 
             steps {

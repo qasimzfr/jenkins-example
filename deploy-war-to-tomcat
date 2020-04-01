@@ -3,8 +3,7 @@ node{
      git 'https://github.com/javahometech/my-app'
    }
    stage('Compile-Package'){
-      // Get maven home path
-      #def mvnHome =  tool name: 'maven-3', type: 'maven'   
+      // Get maven home path  
       sh "/home/jenkins-example/jenkins-example/mvn clean test"
    }
    stage('Deploy to Tomcat'){

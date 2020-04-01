@@ -12,7 +12,9 @@ node{
       sshagent(['tomcat-dev']) {
       
          sshagent(['tomcat-dev']) {
-            sh 'scp -o StrictHostKeyChecking=no target/*.war ec2-user@3.133.156.164:/opt/tomcat/webapps/'
+       
+       sh 'scp -o StrictHostKeyChecking=no target/*.war ec2-user@3.133.156.164:/opt/tomcat/webapps/'
+         }
       }
    }
    stage('Email Notification'){
